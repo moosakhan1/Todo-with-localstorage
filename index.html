@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: black;">
+    <div id="login-page" class="page">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="home-page" style="background: black;color: #fff;border: 1px solid #313030;" class="page">
+        <h2>Home</h2>
+        <button id="logout-btn">Logout</button>
+        <h3>Todo List</h3>
+        <form id="todo-form">
+            <textarea id="todo-input" placeholder="Enter your todo" required></textarea>
+            <button type="submit">Add Todo</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
